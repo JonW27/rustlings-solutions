@@ -10,7 +10,10 @@ fn main() {
     let mut tokens = 100;
     let pretend_user_input = "8";
 
-    let cost = total_cost(pretend_user_input)?;
+    let cost = match total_cost(pretend_user_input) {
+        Ok(num) => num,
+        Err(err) => 1000, // they can't purchase anything
+    };
 
     if cost > tokens {
         println!("You can't afford that many!");

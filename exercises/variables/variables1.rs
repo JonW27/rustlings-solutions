@@ -2,8 +2,8 @@
 // Make me compile! Scroll down for hints :)
 
 fn main() {
-    x = 5;
-    println!("x has the value {}", x);
+    let x : i64 = 5;
+    println!("x has the value {}", x.to_string());
 }
 
 

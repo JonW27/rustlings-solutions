@@ -7,7 +7,7 @@ macro_rules! my_macro {
     };
 }
 
-#[macro_use]
+use macros
 fn main() {
     my_macro!();
 }

@@ -1,14 +1,15 @@
 // macros2.rs
 // Make me compile! Scroll down for hints :)
 
-fn main() {
-    my_macro!();
-}
-
 macro_rules! my_macro {
     () => {
         println!("Check out my macro!");
     };
+}
+
+#[macro_use]
+fn main() {
+    my_macro!();
 }
 
 
